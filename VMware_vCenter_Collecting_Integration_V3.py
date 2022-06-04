@@ -158,7 +158,7 @@ def DiscoveryMain(Framework):
     for cred in protocols:
         protocol = ProtocolDictionaryManager.getProtocolById(cred)
         user = protocol.getProtocolAttribute('protocol_username')
-        passwd = '!Ump45mp5'
+        passwd = protocol.getProtocolAttribute('protocol_password')
 
     # Получаем словарь с данными о машинах
     machineData = ConnectionVcenter(ip, user, passwd)
