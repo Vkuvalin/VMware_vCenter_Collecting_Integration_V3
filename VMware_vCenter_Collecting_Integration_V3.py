@@ -57,7 +57,7 @@ def setting_attr(instSoftOSH, soft_attr):
 def creatingSoftwareOSHs(fileName):
     '''
     :param fileName: path and name of file
-    :return: list of InstalledSoftware OSH (mb should use OSH vector?)
+    :return: list of InstalledSoftware OSH
     '''
     tree = ET.parse(fileName)
     root = tree.getroot()
