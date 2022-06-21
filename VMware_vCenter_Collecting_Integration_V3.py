@@ -149,7 +149,7 @@ def DiscoveryMain(Framework):
 
     protocols = Framework.getAvailableProtocols(ip, _vmware_vim_base.VimProtocol.SHORT)
     user = None
-    passwd = None  # Забил просто до лучших времен
+    passwd = None  
 
     # Данные для парсинга данных из XML
     fileName = Framework.getParameter('file_name').replace('%PROBE_MGR_RESOURCES_DIR%', CollectorsParameters.PROBE_MGR_RESOURCES_DIR)
